@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/interactive-rating/static/js/main.df5b1fe8.js",
+    "static/media/illustration.svg": "/interactive-rating/static/media/illustration.d74a66b551b99ae110b5362ed63106bf.svg",
+    "index.html": "/interactive-rating/index.html",
+    "static/media/star.svg": "/interactive-rating/static/media/star.12766a8d207af861a70f92500634c8be.svg",
+    "main.df5b1fe8.js.map": "/interactive-rating/static/js/main.df5b1fe8.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.df5b1fe8.js"
+  ]
+}
