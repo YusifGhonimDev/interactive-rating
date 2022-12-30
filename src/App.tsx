@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Box, Stack } from '@mui/material';
+import RatingCard from 'components/RatingCard';
+import ThankYouCard from 'components/ThankYouCard';
+import { useState } from 'react';
 
-function App() {
+const App = () => {
+  const [submitted, setSubmitted] = useState(false);
+  const [currentRating, setCurrentRating] = useState(0);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Stack justifyContent="center" alignItems="center" height="100vh" bgcolor="neutral.veryDarkBlue">
+      <Box bgcolor="neutral.darkBlue" width={400} height={400} borderRadius={8} p={4}>
+        {submitted ? (
+          <ThankYouCard rating={currentRating} />
+        ) : (
+          <RatingCard setSubmitted={setSubmitted} setCurrentRating={setCurrentRating} currentRating={currentRating} />
+        )}
+      </Box>
+    </Stack>
   );
-}
+};
 
 export default App;
