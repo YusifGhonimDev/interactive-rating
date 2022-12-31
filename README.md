@@ -35,7 +35,6 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - [React](https://reactjs.org/) - JS library
-- [Styled Components](https://styled-components.com/) - For styles
 - [Material UI](https://mui.com/core/) - A popular library for building user interfaces with React
 
 ## Author
